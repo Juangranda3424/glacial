@@ -52,6 +52,7 @@ pnpm dev
 pnpm build && pnpm start
 ```
 
+
 # Estructura de el nombre de los archivos
 
 Para la estructura de los archivos, se recomienda seguir una convención de nombres clara y consistente por lo que se nombrar usando camelCase todos los archivos de la siguiente manera:
@@ -60,6 +61,32 @@ Para la estructura de los archivos, se recomienda seguir una convención de nomb
 user.service.ts
 order.service.ts
 product.service.ts
+```
+
+# Para iniciar un microservicio nuevo con Python y FastAPI
+
+Cada microservicio tendrá un archivo `app.py` dentro de la carpeta `src`, el cual será el punto de entrada para el servidor. Para iniciar el servidor, puedes ejecutar el siguiente comando:
+
+
+Como primer paso, es necesario instalar las dependencias necesarias para trabajar con FastAPI. Puedes hacerlo ejecutando el siguiente comando:
+
+```bash
+pip install -r requirements.txt
+```
+
+```bash
+cd microservice-commercial
+python -m src.app
+```
+
+# Estructura de el nombre de los archivos
+
+Para la estructura de los archivos, se recomienda seguir una convención de nombres clara y consistente por lo que se nombrar usando snake_case todos los archivos de la siguiente manera:
+
+```
+user_service.py
+order_service.py
+product_service.py
 ```
 
 # Arquitectura de carpetas para cada microservicio
@@ -78,7 +105,6 @@ src/
 ├── config/
 ├── middlewares/
 ├── repositories/
-
 ```
 
 # Commits Semánticos
