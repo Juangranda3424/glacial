@@ -1,0 +1,4 @@
+shared-keys/
+.env
+.env.*
+.git/
